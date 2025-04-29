@@ -23,3 +23,23 @@ class Solution:
         return len(longest)
 
 ```
+
+## Number of longest increasing subsequence
+
+- Find LIS using n**2 algorithm
+- Maintain one other array count (stores count of LIS till now)
+
+```python
+for i in range(len(nums)):
+    for j in range(i):
+        if nums[i] > nums[j]:
+            if lis[j] + 1 > lis[i]:
+                lis[i] = lis[j] + 1
+                count[i] = count[j]
+            elif lis[j] + 1 == lis[i]:
+                count[i] += count[j]
+
+mx = max(list)
+return sum(x for index, x in enumerate(count) if lis[index] == mx)
+
+```
