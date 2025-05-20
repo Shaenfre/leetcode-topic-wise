@@ -8,6 +8,10 @@
 - else answer is -1
 
 ## Maximum Number of events that can be attended
-
+- very similar (Single Threaded cpu)
 
 ## Maximum Profit in job Scheduling (can be solved using dp as well)
+
+## Task Scheduler
+
+## Bricks and ladders
