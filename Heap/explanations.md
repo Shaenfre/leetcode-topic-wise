@@ -15,3 +15,5 @@
 ## Task Scheduler
 
 ## Bricks and ladders
+
+## Minimum cost to hire k workers
